@@ -1,0 +1,15 @@
+name: Validación seguridad
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  lint-and-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v2
+
+      - name: Simulación de escaneo
+        run: echo "Ejecución simulada de escaneo de seguridad"
